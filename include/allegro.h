@@ -86,7 +86,7 @@ public:
     //! that doesn't know better. -RBD
     virtual ~Alg_atoms() {
         for (int i = 0; i < len; i++) {
-            delete atoms[i];
+            delete[] atoms[i];
         }
         delete[] atoms;
     }
